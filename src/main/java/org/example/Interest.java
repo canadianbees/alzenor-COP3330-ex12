@@ -14,6 +14,7 @@ public class Interest
     private final double rate;
     private final int years;
 
+    //gets user input
     public Interest()
     {
         Scanner input = new Scanner(System.in);
@@ -28,6 +29,7 @@ public class Interest
         this.years = input.nextInt();
     }
 
+    //calculates the simple interest and prints the result
     public void SmpInt()
     {
         float percent = (float) this.rate/100;
